@@ -1,0 +1,434 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    background-color: #f6f5fa !important;
+    font-family: "Times New Roman", Times, serif;
+    scroll-behavior: smooth;
+    scroll-padding: 80px;
+}
+
+h2 {
+    color: #484848 !important;
+}
+
+/* NavBar */
+
+.navbar-toggler-icon {
+    font-size: 30px;
+}
+
+.fa-bars {
+    margin-top: 8px;
+}
+
+.nav-item {
+    margin-left: 10px;
+    color: black;
+    text-decoration: underline black;
+}
+
+.nav-item:hover {
+    color: #212529;
+}
+
+a span {
+    color: #be009f;
+}
+
+/* Headline & Search*/
+
+#topSpacer {
+    height: 75px;
+}
+
+#Main {
+    background-image: url(../Bilder/bibliotek\ bild\ blurred.jpg);
+    background-repeat: no-repeat;
+    background-position: scroll;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 45px !important;
+    font-family: 'Nobile', sans-serif !important;   
+    background-color: rgba(0, 0, 0, 0.089);
+}
+
+@media only screen and (min-width: 890px) {
+    #Main {
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    h1 {
+        font-size: 60px !important;
+    }
+}
+
+#headline {
+    padding-top: 80px;
+}
+
+#label {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0px;
+    padding-top: 40px;
+}
+
+#searchBar {
+    border: 0px;
+}
+
+#radioRow {
+    padding-bottom: 80px !important;
+}
+
+#radioBtns {
+    padding: 4px 8px 4px 8px;
+}
+
+label[for="Biblioteket"], label[for="GotLib"] {
+    margin-bottom: 0px !important;
+}
+
+form {
+    border-radius: 30px !important;
+    border: black 1px solid;
+    background-color: white;
+}
+
+#searchBar {
+    border-radius: 30px !important;
+    background-color: white;
+}
+
+/* Textdel (små rutor) */
+
+#textDel, #textDel2 {
+    border-left: .375rem solid #007bff;
+    margin: 0px 10px 20px 10px;
+    border-radius: 4px;
+    background-color: white;
+    box-shadow: 2px 2px 5px gray;
+}
+
+@media only screen and (min-width: 695px) {
+    #textDel, #textDel2 {
+        margin: 10px 40px 10px 40px;
+        padding: 15px;
+    }
+    #textDel2 {
+        font-size: 1.1rem;
+    }
+}
+
+/* Databassamling */
+
+#databaser {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+    padding: 12px;
+}
+
+dt {
+    margin-top: 15px;
+}
+
+/* Öppettider*/
+
+#öppettider{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+    padding: 12px;
+}
+
+table {
+    margin-left:auto; 
+    margin-right:auto;
+    font-size: large;
+}
+
+tr>td, tr>th {
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 290px) {
+    th {
+        width: 80px !important;
+    }
+
+    tr>td, tr>th {
+        padding-bottom: 2px;
+    }
+}
+
+/* Sök för Karta */
+
+#searchResultsImport ul {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#searchResultsImport li a {
+    border: 1px solid #ddd; /* Add a border to all links */
+    margin-top: -1px; /* Prevent double borders */
+    background-color: white; /* Grey background color */
+    padding: 8px; /* Add some padding */
+    text-decoration: none; /* Remove default text underline */
+    font-size: 18px; /* Increase the font-size */
+    color: black; /* Add a black text color */
+    display: block; /* Make it into a block element to fill the whole list */
+}
+  
+#searchResultsImport li a:hover:not(.header) {
+    background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+#searchResultsImport li {
+    display: none;
+    cursor: pointer;
+}
+
+/* Karta */
+
+#mapPopup{
+    background-color: white;
+    box-shadow: 3px 3px 6px gray;
+    border-radius: 10px !important;
+}
+
+#mapSVG, #guideSVG {
+    background-color: white;
+}
+
+#mapSVG {
+    border-radius: 10px 10px 0px 0px !important;
+    box-shadow: 3px 0.5px 6px 0px gray;
+}
+
+#guideSVG {
+    border-radius: 0px 0px 10px 10px !important;
+    box-shadow: 3px 3px 6px gray;
+}
+
+#mapPopup {
+    position: absolute; 
+    z-index: 3; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+#shelfH4{
+    font-size: 1.3rem;
+}
+
+#mapPopup ul {
+    padding-left: 20px;
+    margin-bottom: 0px;
+}
+
+#mapPopup a {
+    color: blue;
+    text-decoration: blue underline;
+}
+
+.shelf:hover {
+    fill: #999999 !important;
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 695px) {
+    #shelfH4{
+        font-size: 1.5rem !important;
+    }
+    
+    #shelfText {
+        font-size: 1rem !important;
+    }
+}
+
+/* Rekommenderade länkar */
+
+#collapsables {
+    background-color: white;
+    box-shadow: 3px 3px 6px gray;
+    border-radius: 10px 10px 10px 10px;
+}
+
+#collapsablesRow {
+    margin: 0px 0px 20px 0px;
+}
+
+div#collapsablesRow .collapse, div#collapsablesRow .collapsing {
+    border: black solid;
+    border-width: 0px 1px 1px;
+}
+
+.collapse dd, .collapsing dd{
+    padding-left: 20px;
+    margin-bottom: 2px;
+}
+
+.collapse dt, .collapsing dt {
+    margin-top: 8px;
+}
+
+#linkBtn {
+    background-position: center;
+    background-size: cover;
+    border: 1px black solid;
+    padding: 0px;
+}
+
+#linkBtn h3 {
+    color: black !important;
+    padding: 5px;
+    font-size: 17px;
+    margin-bottom: 0px;
+    padding-bottom:13px;
+}
+
+.småText {
+    font-size: 20px !important;
+}
+
+#linkBtn span {
+    color: black !important;
+    font-size: 20px;
+    display: inline-block;
+    align-items: baseline;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+#linkBtnText:hover #linkBtnSpan { 
+    text-decoration: underline blue;
+}
+
+@media only screen and (min-width: 450px) {
+    #linkBtn h3 {
+        font-size: 1.45em !important;
+    }
+}
+
+@media only screen and (min-width: 620px) {
+    #linkBtn h3 {
+        font-size: 1.75em !important;
+    }
+}
+
+.Left {
+    border-radius: 10px 0px 0px 0px;
+}
+
+.Right {
+    border-radius: 0px 10px 0px 0px;
+}
+
+.BLeft {
+    border-radius: 0px 0px 0px 10px;
+}
+
+.BRight {
+    border-radius: 0px 0px 10px 0px;
+}
+
+#djurLänkar dl dt {
+    margin-top: 12px !important;
+}
+
+#psykologiFilosofiCollapse, #religionEtikCollapse, #stipendierFonderCollapse {
+    border-radius: 0px 0px 10px 10px;
+}
+
+/* Om oss*/
+
+.card {
+    background-color: white;
+    box-shadow: 3px 3px 6px gray;
+    margin: 20px 20px 20px 20px;
+    border: 0px !important;
+}
+
+.card-body {
+    padding: 8px !important;
+    padding-top: 5px !important;
+}
+
+@media only screen and (min-width: 620px) {
+    .card-body {
+        padding: 20px !important;
+        padding-top: 10px !important;
+    }
+}
+
+@media only screen and (min-width: 1151px) {
+    .card {
+        margin: 0px 50px 0px 50px;
+    }
+}
+    
+@media only screen and (min-width: 620px) {
+    .card {
+        width: 18rem !important;
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .card {
+        width: 12rem !important;
+    }
+}
+
+#copier, #Rocio, #Pontus, #Johan {
+    border-radius: 10px !important;
+    background-color: #f0f0f0;
+}
+
+#Rocio, #Pontus, #Johan {
+    padding: 4px;
+}
+
+/* Footer */
+
+#githubBtn {
+    border: 1px solid black;
+    border-radius: 10px;background-color: #f3f3f3;
+    padding: 3px;
+    box-shadow: 2px 2px 4px gray;
+}
+
+/* Instagram */
+
+#instaTxt {
+    right: 130px;
+    bottom: 30px;
+    position: fixed;
+    width: 92px;
+    color: black; 
+    padding: 6px;
+    border-radius: 5px;    
+    background: #d6249e5d;
+    background: radial-gradient(circle at 10% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+#instaPic {
+    right: 30px;
+    bottom: 30px;
+    position: fixed;
+    width: 80px;
+    height: 80px;
+    opacity: 0.9;
+}
+
+#instagram p {
+    display: none;
+}
