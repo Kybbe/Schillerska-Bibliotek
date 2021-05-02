@@ -7,7 +7,7 @@ function myCopyFunction(name) {
     } else if(name == "Pontus") {
         var str = "@educ.goteborg.se";
     } else if(name == "Johan") {
-        var str = "@@educ.goteborg.se";
+        var str = "@educ.goteborg.se";
     } else {
         var str = "ERROR";
     }
@@ -81,7 +81,7 @@ lastSelectedShelf = "";
 
 function showShelfInfo(shelfId) {
 if(lastSelectedShelf != "") {
-    document.getElementById(lastSelectedShelf).style.fill = "4f4f4f";
+    document.getElementById(lastSelectedShelf).style.fill = "#4f4f4f";
     document.getElementById('shelf' + lastSelectedShelf).style.display = "none";
 } 
 document.getElementById(shelfId).style.fill = "#007bff";
