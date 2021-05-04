@@ -121,7 +121,8 @@ $(".form-inline").submit(function(e){
 
 $(document).ready(function(){
     if(vw <= 280) {
-        alert("Gå in på hemsidan på en dator istället, för att se hela sidan bättre.")
+        Notif = document.getElementById("MobileNotif")
+        Notif.innerHTML = ("Gå in på hemsidan på en dator istället, för att se hela sidan bättre.")
     }
 });
 
