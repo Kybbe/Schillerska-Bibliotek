@@ -6,7 +6,6 @@ html,body {
     overflow-x: hidden;
     background-color: #f6f5fa !important;
     font-family: "Times New Roman", Times, serif;
-    overscroll-behavior: none;
     scroll-behavior: smooth;
     scroll-padding: 80px;
 }
