@@ -1,5 +1,4 @@
 const vw = document.documentElement.clientWidth;
-console.log(vw)
 console.log("Hej! 👋" + "\n" + "Jag ser att du försöker se hur sidan fungerar.😎" + "\n" + "Skrolla längst ner och klicka på Github knappen," + "\n" + "så får du se mitt repo med live updates!✨" + "\n" + "Lämna gärna ett issue ifall du vill att jag ska uppdatera något!")
 function myCopyFunction(name) {
 
