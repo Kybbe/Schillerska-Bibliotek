@@ -164,11 +164,445 @@
         <div class="row mt-2 justify-content-center">
             <div class="col-10 col-sm-8 col-md-6">
                 <input class="form-control" id="searchMap" onkeyup="searchMap()" type="text" placeholder="Boksignum, Genre etc" aria-label="Search">
-                <div id="searchResultsImport"></div> <!-- HTML Import av mapSearchResult.html -->
+                <div id="searchResultsImport">
+                    <div id="searchShelf21">
+                        <ul>
+                            <li><a onclick="highlightShelf(this)">A - Bok- & Biblioteksväsen</a></li>
+                            <li><a onclick="highlightShelf(this)">B - Allmänt & Blandat</a></li>
+                            <li><a onclick="highlightShelf(this)">C - Religion</a></li>
+                        </ul>
+                    </div>
+                    <div id="searchShelf20">
+                        <ul>
+                            <li><a onclick="highlightShelf(this)">D - Filosofi & Psykologi</a></li>
+                            <li><a onclick="highlightShelf(this)">E - Uppfostran & Undervisning</a></li>
+                            <li><a onclick="highlightShelf(this)">F - Språkvetenskap</a></li>
+                        </ul>
+                    </div>
+                    <div id="searchShelf19">
+                        <ul>
+                            <li><a onclick="highlightShelf(this)">G - LitteraturVetenskap</a></li>
+                            <li><a onclick="highlightShelf(this)">I - Konst, Musik, Teater, Film & Fotografi</a></li>
+                        </ul>
+                    </div>
+                    <div id="searchShelf18">
+                        <ul>
+                            <li><a onclick="highlightShelf(this)">J - Arkeologi</a></li>
+                            <li><a onclick="highlightShelf(this)">K - Historia (K.1 - K.5)</a></li>
+                        </ul>
+                    </div>
+                    <div id="searchShelf17">
+                        <ul>
+                            <li><a onclick="highlightShelf(this)">K - Historia (K.51 - KO)</a></li>
+                        </ul>
+                    </div>
+                    <div id="searchShelf16">
+                        
+                        <ul>
+                            <li><a onclick="highlightShelf(this)">K - Historia (KOA - KY)</a></li>
+                            <li><a onclick="highlightShelf(this)">L - Biografi med Genealogi</a></li>
+                        </ul>
+                    </div>
+                    <div id="searchShelf15">
+                        
+                        <ul>
+                            <li><a onclick="highlightShelf(this)">M - Etnografi, Etnologi & SocialAntrolopogi</a></li>
+                            <li><a onclick="highlightShelf(this)">N - Geografi & Lokalhistoria</a></li>
+                            <li><a onclick="highlightShelf(this)">O - Samhälls & Rättsvetenskap (OCC - OY)</a></li>
+                        </ul>
+                    </div>
+                    <div id="searchShelf14">  
+                        <ul>
+                            <li><a onclick="highlightShelf(this)">O - Samhälls & Rättsvetenskap (OA - OCC</a></li>
+                                <li><a onclick="highlightShelf(this)">P - Teknik, Industri & Kommunikationer</a></li>
+                                <li><a onclick="highlightShelf(this)">Q - Ekonomi väringsväsen</a></li>
+                                <li><a onclick="highlightShelf(this)">R - Idrott näringsväsen</a></li>
+                                <li><a onclick="highlightShelf(this)">S - Militärsväsen</a></li>
+                                <li><a onclick="highlightShelf(this)">T - Matematik</a></li>
+                            </ul>
+                        </div>
+                        <div id="searchShelf13">
+                            <ul>
+                                <li><a onclick="highlightShelf(this)">U - Naturvetenskap</a></li>
+                                <li><a onclick="highlightShelf(this)">V - Medicin</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div id="searchShelf1">
+                            <ul>
+                                <li><a onclick="highlightShelf(this)">Lättläst</a></li>
+                                <li><a onclick="highlightShelf(this)">Deckare - Lättläst</a></li>
+                                <li><a onclick="highlightShelf(this)">Fantasy - Lättläst</a></li>
+                                <li><a onclick="highlightShelf(this)">Rysare & Skräck - Lättläst</a></li>
+                                <li><a onclick="highlightShelf(this)">Science Fiction - Lättläst</a></li>
+                            </ul>
+                        </div>
+                        <div id="searchShelf2">
+                            <ul>
+                                <li><a onclick="highlightShelf(this)">Ungdom</a></li>
+                                <li><a onclick="highlightShelf(this)">Deckare - Ungdom</a></li>
+                                <li><a onclick="highlightShelf(this)">Fantasy - Ungdom</a></li>
+                                <li><a onclick="highlightShelf(this)">Rysare & Skräck - Ungdom</a></li>
+                                <li><a onclick="highlightShelf(this)">Science Fiction - Ungdom</a></li>
+                        </ul>   
+                    </div>
+                    <div id="searchShelf3">
+                        <ul>
+                            <li><a onclick="highlightShelf(this)">Schillerska skriver </a></li>
+                            <li><a onclick="highlightShelf(this)">Sagor & Samlingar</a></li>
+                            <li><a onclick="highlightShelf(this)">Novellix noveller</a></li>
+                            <li><a onclick="highlightShelf(this)">Skönlitteratur A-D</a></li>
+                        </ul>
+                    </div>
+                    <div id="searchShelf5">
+                        <ul><li><a onclick="highlightShelf(this)">Skönlitteratur L-S</a></li></ul>
+                    </div>
+                    <div id="searchShelf6">
+                        
+                        <ul>
+                            <li><a onclick="highlightShelf(this)">Skönlitteratur T-Ö</a></li>
+                            <li><a onclick="highlightShelf(this)">Fantasy - Skönlitteratur</a></li>
+                            <li><a onclick="highlightShelf(this)">Science Fiction - Skönlitteratur</a></li>
+                        </ul>
+                    </div>
+                    <div id="Skönlitterära">
+                        <ul>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Roman</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Dikt</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Kortprosa</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Fabel</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Berättelse</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Historiett</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Krönika</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Novell</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Lyrik</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Haiku</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Komedi</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Musikal</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Bildningsroman</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Künstlerroman</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Universitetsroman</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Brevroman</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Dagboksroman</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Pikareskroman</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Äventyrsroman</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Kriminalroman</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Thriller</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Historisk roman</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Legend</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Miniatyr</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Myt</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Novellett</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Parabel</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Folksaga</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Konstsaga</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Skiss</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Bunden vers</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Alexandrin</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Canzon</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Distikon</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Elegi</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Sapfisk strof</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Sonett</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Fri vers</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Prosadikt</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Lustspel</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Satyrspel</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Tragedi</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Modernt</a></li>
+                            <li><a onclick="highlightShelf(Skönlitterära)">Operett</a></li>
+                        </ul>
+                    </div>
+                    <div id="searchShelf7">
+                        <ul>
+                            <li><a onclick="highlightShelf(this)">Nya böcker</a></li>
+                            <li><a onclick="highlightShelf(this)">Dramatik</a></li>
+                            <li><a onclick="highlightShelf(this)">Poesi</a></li>
+                        </ul>
+                    </div>
+                    <div id="searchShelf8">
+                        <ul>
+                            <li><a onclick="highlightShelf(this)">Engelska</a></li>
+                            <li><a onclick="highlightShelf(this)">Fiction på Engelska</a></li>
+                            <li><a onclick="highlightShelf(this)">Drama på Engelska</a></li>
+                        </ul>
+                    </div>
+                    <div id="searchShelf9">
+                        <ul><li><a onclick="highlightShelf(this)">Reserverade Böcker</a></li></ul>
+                    </div>
+                    <div id="searchShelf10">
+                        <ul><li><a onclick="highlightShelf(this)">Världslitteratur</a></li></ul>
+                    </div>
+                    <div id="searchShelf11">
+                        <ul><li><a onclick="highlightShelf(this)">Världslitteratur</a></li></ul>
+                    </div>
+                    <div id="searchShelf12">
+                        <ul><li><a onclick="highlightShelf(this)">Världslitteratur</a></li></ul>
+                    </div>
+                        
+                    <div id="searchShelf23">
+                        <ul><li><a onclick="highlightShelf(this)">Tidskrifter</a></li></ul>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div id="mapImport"></div> <!-- HTML Import av map.html -->
+        <div id="mapImport">
+            <div class="row justify-content-center" id="mapRow">
+                <div class="col-10 col-sm-8 col-md-6" style="padding: 3px;">
+                    <div id="mapPopup">
+                        <h4 id="shelfH4" style="padding: 5px; margin: 0px;">Klicka på en hylla för att se de kategorier som står i den!</h4>
+                        <div id="shelf1" style="display: none;">
+                            <h4>Lättläst</h4>
+        
+                            <ul>
+                                <li>Deckare</li>
+                                <li>Fantasy</li>
+                                <li>Rysare & Skräck</li>
+                                <li>Science Fiction</li>
+                            </ul>
+                        </div>
+                        <div id="shelf2" style="display: none;">
+                            <h4>Ungdom</h4>
+        
+                            <ul>
+                                <li>Deckare </li>
+                                <li>Fantasy</li>
+                                <li>Rysare & Skräck</li>
+                                <li>Science Fiction</li>
+                            </ul>
+                        </div>
+                        <div id="shelf3" style="display: none;">
+                            <ul>
+                                <li>Schillerska skriver </li>
+                                <li>Sagor & Samlingar</li>
+                                <li>Novellix noveller</li>
+                                <li>Skönlitteratur A-D</li>
+                            </ul>
+                        </div>
+                        <div id="shelf4" style="display: none;">
+                            <ul>
+                                <li>Schillerska skriver </li>
+                                <li>Sagor & Samlingar</li>
+                                <li>Novellix noveller</li>
+                                <li>Skönlitteratur A-D</li>
+                            </ul>
+                        </div>
+                        <div id="shelf5" style="display: none;">
+                            <h4>Skönlitteratur L-S</h4>
+                        </div>
+                        <div id="shelf6" style="display: none;">
+                            <h4>Skönlitteratur T-Ö</h4>
+        
+                            <ul>
+                                <li>Fantasy</li>
+                                <li>Science Fiction</li>
+                            </ul>
+                        </div>
+                        <div id="shelf7" style="display: none;">
+                            <ul>
+                                <li>Nya böcker</li>
+                                <li>Dramatik</li>
+                                <li>Poesi</li>
+                            </ul>
+                        </div>
+                        <div id="shelf8" style="display: none;">
+                            <h4>English</h4>
+                            <ul>
+                                <li>Fiction in English</li>
+                                <li>Drama in English</li>
+                            </ul>
+                        </div>
+                        <div id="shelf9" style="display: none;">
+                            <h4>Reserverade Böcker</h4>
+                        </div>
+                        <div id="shelf10" style="display: none;">
+                            <h4>Världslitteratur 3</h4>
+                        </div>
+                        <div id="shelf11" style="display: none;">
+                            <h4>Världslitteratur 2</h4>
+                        </div>
+                        <div id="shelf12" style="display: none;">
+                            <h4>Världslitteratur 1</h4>
+                        </div>
+                        <div id="shelf13" style="display: none;">
+                            <h4>U&V</h4>
+                            
+                            <ul>
+                                <li>U - Naturvetenskap</li>
+                                <li>V - Medicin</li>
+                            </ul>
+                        </div>
+                        <div id="shelf14" style="display: none;">
+                            <h4>O-T</h4>
+                            
+                            <ul>
+                                <li>O - Samhälls & Rättsvetenskap</li>
+                                <li>P - Teknik, Industri & Kommunikationer</li>
+                                <li>Q - Ekonomi väringsväsen</li>
+                                <li>R - Idrott näringsväsen</li>
+                                <li>S - Militärsväsen</li>
+                                <li>T - Matematik</li>
+                            </ul>
+                        </div>
+                        <div id="shelf15" style="display: none;">
+                            <h4>M-O</h4>
+                            
+                            <ul>
+                                <li>M - Etnografi, Etnologi & SocialAntrolopogi</li>
+                                <li>N - Geografi & Lokalhistoria</li>
+                                <li>O - Samhälls & Rättsvetenskap</li>
+                            </ul>
+                        </div>
+                        <div id="shelf16" style="display: none;">
+                            <h4>K&L</h4>
+                            
+                            <ul>
+                                <li>K - Historia (KOA - KY)</li>
+                                <li>L - Biografi med Genealogi</li>
+                            </ul>
+                        </div>
+                        <div id="shelf17" style="display: none;">
+                            <h4>K</h4>
+                
+                            <ul>
+                                <li>K - Historia (K.51 - KO)</li>
+                            </ul>
+                        </div>
+                        <div id="shelf18" style="display: none;">
+                            <h4>J&K</h4>
+                
+                            <ul>
+                                <li>J - Arkeologi</li>
+                                <li>K - Historia (K.1 - K.5)</li>
+                            </ul>
+                        </div>
+                        <div id="shelf19" style="display: none;">
+                            <h4>G&I</h4>
+                
+                            <ul>
+                                <li>G - LitteraturVetenskap</li>
+                                <li>I - Konst, Musik, Teater, Film & Fotografi</li>
+                            </ul>
+                        </div>
+                        <div id="shelf20" style="display: none;">
+                            <h4>D-F</h4>
+                
+                            <ul>
+                                <li>D - Filosofi & Psykologi</li>
+                                <li>E - Uppfostran & Undervisning</li>
+                                <li>F - Språkvetenskap</li>
+                            </ul>
+                        </div>
+                        <div id="shelf21" style="display: none;">
+                            <h4>A-C</h4>
+                
+                            <ul>
+                                <li>A - Bok- & Biblioteksväsen</li>
+                                <li>B - Allmänt & Blandat</li>
+                                <li>C - Religion</li>
+                            </ul>
+                        </div>
+                        <div id="shelf23" style="display: none;">
+                            <h4>Tidskrifter</h4>
+                            <p>Tidningar & liknande</p>
+                        </div>
+                    </div>
+        
+                    
+        
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" id="mapSVG">
+                        <g>
+                        <rect fill="#ffffff" id="canvas_background" height="602" width="802" y="-1" x="-1"/>
+                        <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+                        <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+                        </g>
+                        </g>
+                        <g>
+                            <rect stroke="#000" id="svg_4" height="472" width="4" y="-2.95" x="562.5" stroke-width="1.5" fill="#fff"/>
+                            <rect stroke="#000" id="svg_10" height="56" width="228.99998" y="1.05" x="568.5" opacity="0.5" stroke-width="1.5" fill="#fff"/>
+                            <text stroke="#000" transform="matrix(1.0381481452750245,0,0,1.0298057127312956,-33.360113643679036,19.896222738193213) " xml:space="preserve" text-anchor="start" font-family="Times New Roman, Times, serif" font-size="30" id="svg_11" y="29.05" x="670.5" stroke-width="0" fill="#000000">Arbetsrum</text>
+                            <rect onclick="showShelfInfo(this.id)" class="shelf" id="3" stroke="#000" height="17" width="109" y="169.05" x="690.5" stroke-width="1.5" fill="#4f4f4f"/>
+                            <rect onclick="showShelfInfo(this.id)" class="shelf" id="5" height="75" width="26" y="224.05" x="649.5" stroke-width="1.5" stroke="#000" fill="#4f4f4f"/>
+                            <rect onclick="showShelfInfo(this.id)" class="shelf" id="9" stroke="#000" height="23" width="64" y="492.05" x="690.5" stroke-width="1.5" fill="#4f4f4f"/>
+                            <rect id="svg_21" height="58" width="148" y="543.05" x="596.5" stroke-width="1.5" stroke="#000" fill="#fff"/>
+                            <text stroke="#000" transform="matrix(0.9001282440276981,0,0,1,8.0517557510303,0) " xml:space="preserve" text-anchor="start" font-family="Times New Roman, Times, serif" font-size="24" id="svg_22" y="566.05" x="663.6195" stroke-width="0" fill="#000000">Bibliotikariens</text>
+                            <text stroke="#000" transform="matrix(1.0257219015441297,0,0,1,-86.56889361653637,0) " xml:space="preserve" text-anchor="start" font-family="Times New Roman, Times, serif" font-size="24" id="svg_23" y="592.05" x="679.28897" stroke-width="0" fill="#000000">Skrivbord</text>
+                            <rect stroke="#000" id="svg_24" height="70" width="22" y="473.05" x="552.5" stroke-width="1.5" fill="#fff"/>
+                            <rect id="svg_25" height="63" width="6" y="545.05" x="562.5" stroke-width="1.5" stroke="#000" fill="#fff"/>
+                            <text transform="rotate(-90 538.2578125,511.64843749999994) " xml:space="preserve" text-anchor="start" font-family="Times New Roman, Times, serif" font-size="24" id="svg_26" y="520.05" x="488.5" stroke-width="0" stroke="#000" fill="#000000">Glas dörr</text>
+                            <rect stroke="#000" id="svg_27" height="472" width="4" y="-2.95" x="239.5" stroke-width="1.5" fill="#fff"/>
+                            <rect stroke="#000" id="svg_28" height="70" width="22" y="473.05" x="229.5" stroke-width="1.5" fill="#fff"/>
+                            <rect id="svg_29" height="63" width="6" y="545.05" x="239.5" stroke-width="1.5" stroke="#000" fill="#fff"/>
+                            <text transform="rotate(89.7815933227539 271.2578125,511.6484375) " xml:space="preserve" text-anchor="start" font-family="Times New Roman, Times, serif" font-size="24" id="svg_31" y="520.05" x="221.5" stroke-width="0" stroke="#000" fill="#000000">Glas dörr</text>
+                            <rect stroke="#000" id="svg_32" height="111" width="135.99999" y="493.05001" x="332" stroke-width="1.5" fill="#c6c6c6"/>
+                            <text xml:space="preserve" text-anchor="start" font-family="Times New Roman, Times, serif" font-size="24" id="svg_33" y="581.05" x="370.5" stroke-width="0" stroke="#000" fill="#000000">Orgel</text>
+                            <line stroke="#000" stroke-linecap="null" stroke-linejoin="null" id="svg_34" y2="437.05" x2="350.5" y1="437.05" x1="244.5" stroke-width="1.5" fill="none"/>
+                            <line stroke-linecap="null" stroke-linejoin="null" id="svg_35" y2="438.05" x2="351" y1="403.05" x1="351" stroke-width="1.5" stroke="#000" fill="none"/>
+                            <line stroke-linecap="null" stroke-linejoin="null" id="svg_36" y2="401.05" x2="361.5" y1="401.05" x1="461.5" stroke-width="1.5" stroke="#000" fill="none"/>
+                            <line transform="rotate(3.1798300743103027 456.7499999999992,421.0000000000001) " stroke-linecap="null" stroke-linejoin="null" id="svg_37" y2="402" x2="455" y1="440" x1="458" stroke-width="1.5" stroke="#000" fill="none"/>
+                            <text xml:space="preserve" text-anchor="start" font-family="Times New Roman, Times, serif" font-size="24" id="svg_39" y="429.05" x="359.96875" stroke-width="0" stroke="#000" fill="#000000">Läktare</text>
+                            <rect stroke="#000" id="svg_41" height="404.62402" width="317" y="-1.57402" x="244.5" stroke-width="0" fill="#c6c6c6"/>
+                            <text xml:space="preserve" text-anchor="start" font-family="Times New Roman, Times, serif" font-size="36" id="svg_42" y="203" x="300" stroke-width="0" stroke="#000" fill="#000000">Studio / Aulan</text>
+                            <rect stroke="#000" id="svg_43" height="39" width="106" y="397.05" x="244.5" stroke-width="0" fill="#c6c6c6"/>
+                            <rect stroke="#000" id="svg_44" height="41" width="104" y="399.05" x="457.5" stroke-width="0" fill="#c6c6c6"/>
+                            <rect onclick="showShelfInfo(this.id)" class="shelf" id="4" height="17" width="109" y="187.05" x="690.5" stroke-width="1.5" stroke="#000" fill="#4f4f4f"/>
+                            <rect onclick="showShelfInfo(this.id)" class="shelf" id="1" height="17" width="109" y="60.05" x="690.5" stroke-width="1.5" stroke="#000" fill="#4f4f4f"/>
+                            <rect onclick="showShelfInfo(this.id)" class="shelf" id="6" height="17" width="109" y="319.05" x="690.5" stroke-width="1.5" stroke="#000" fill="#4f4f4f"/>
+                            <rect onclick="showShelfInfo(this.id)" class="shelf" id="7" height="17" width="109" y="337.05" x="690.5" stroke-width="1.5" stroke="#000" fill="#4f4f4f"/>
+                            <rect onclick="showShelfInfo(this.id)" class="shelf" id="8" height="17" width="109" y="474.05" x="690.5" stroke-width="1.5" stroke="#000" fill="#4f4f4f"/>
+                            <rect onclick="showShelfInfo(this.id)" class="shelf" id="2" height="75" width="26" y="85.05" x="649.5" stroke-width="1.5" stroke="#000" fill="#4f4f4f"/>
+                            <rect id="52" height="43" width="97" y="98.05" x="701.5" stroke-width="1.5" stroke="#000" fill="#cccccc"/>
+                            <rect id="53" height="43" width="97" y="233.05" x="701.5" stroke-width="1.5" stroke="#000" fill="#cccccc"/>
+                            <rect id="54" stroke="#000" height="21" width="97" y="373.05" x="701.5" stroke-width="1.5" fill="#cccccc"/>
+                            <rect stroke="#000" height="21" width="97" y="425.05" x="701.5" stroke-width="1.5" fill="#cccccc"/>
+                            <rect onclick="showShelfInfo(this.id)" class="shelf" id="10" height="17" width="109" y="0.05" x="0.5" stroke-width="1.5" stroke="#000" fill="#4f4f4f"/>
+                            <rect onclick="showShelfInfo(this.id)" class="shelf" id="12" height="17" width="109" y="93.05" x="0.5" stroke-width="1.5" stroke="#000" fill="#4f4f4f"/>
+                            <rect onclick="showShelfInfo(this.id)" class="shelf" id="13" height="17" width="109" y="111.05" x="0.5" stroke-width="1.5" stroke="#000" fill="#4f4f4f"/>
+                            <rect onclick="showShelfInfo(this.id)" class="shelf" id="15" height="17" width="109" y="207.05" x="0.5" stroke-width="1.5" stroke="#000" fill="#4f4f4f"/>
+                            <rect onclick="showShelfInfo(this.id)" class="shelf" id="16" height="17" width="109" y="225.05" x="0.5" stroke-width="1.5" stroke="#000" fill="#4f4f4f"/>
+                            <rect onclick="showShelfInfo(this.id)" class="shelf" id="18" height="17" width="109" y="327.05" x="0.5" stroke-width="1.5" stroke="#000" fill="#4f4f4f"/>
+                            <rect onclick="showShelfInfo(this.id)" class="shelf" id="19" height="17" width="109" y="345.05" x="0.5" stroke-width="1.5" stroke="#000" fill="#4f4f4f"/>
+                            <rect onclick="showShelfInfo(this.id)" class="shelf" id="21" height="17" width="109" y="448.05" x="0.5" stroke-width="1.5" stroke="#000" fill="#4f4f4f"/>
+                            <rect height="43" width="97" y="32.05" x="1.5" stroke-width="1.5" stroke="#000" fill="#cccccc"/>
+                            <rect height="43" width="97" y="146.05" x="1.5" stroke-width="1.5" stroke="#000" fill="#cccccc"/>
+                            <rect stroke="#000" height="43" width="97" y="262.05" x="1.5" stroke-width="1.5" fill="#cccccc"/>
+                            <rect stroke="#000" height="43" width="97" y="383.05" x="1.5" stroke-width="1.5" fill="#cccccc"/>
+                            <rect onclick="showShelfInfo(this.id)" class="shelf" id="14" height="75" width="26" y="126.05" x="133.5" stroke-width="1.5" stroke="#000" fill="#4f4f4f"/>
+                            <rect onclick="showShelfInfo(this.id)" class="shelf" id="11" height="75" width="26" y="18.05" x="133.5" stroke-width="1.5" stroke="#000" fill="#4f4f4f"/>
+                            <rect onclick="showShelfInfo(this.id)" class="shelf" id="17" height="75" width="26" y="247.05" x="133.5" stroke-width="1.5" stroke="#000" fill="#4f4f4f"/>
+                            <rect onclick="showShelfInfo(this.id)" class="shelf" id="20" height="75" width="26" y="365.05" x="133.5" stroke-width="1.5" stroke="#000" fill="#4f4f4f"/>
+                            <path id="svg_75" d="m69.85993,578.26544c-1.2567,-1.83691 2.65019,-2.77888 1.63981,-4.48848c-1.61132,-1.09364 -4.02536,-0.83817 -6.03356,-0.75468c-2.16917,-0.20231 -2.80433,1.47967 -4.05485,2.17858c-2.46587,-0.58287 -1.58399,-3.00247 0.66479,-3.27078c2.94081,-0.96331 6.1875,-0.40955 9.24208,-0.83643c2.21056,-0.97433 -0.5212,-3.06671 -2.2571,-3.28906c-2.87291,-0.87829 -6.42108,-0.90166 -8.61657,-2.75184c-0.87301,-1.44132 -0.64656,-4.07882 1.70735,-4.58369c1.06682,-1.36631 0.84379,-3.12584 0.56338,-4.64287c0.23937,-1.61321 -4.49063,-0.66835 -2.50596,-2.3222c1.78977,-1.0383 4.0974,-1.67475 6.35825,-1.64934c1.84459,0.04621 1.97034,1.65337 -0.06327,1.25981c-2.06849,0.78665 -1.29839,3.03696 -1.21936,4.47579c0.99805,1.45009 3.70755,0.68316 5.46487,0.90031c2.49993,0.05085 3.65508,0.05659 6.02592,0.66641c2.39787,-0.13423 1.45344,-2.62394 0.02872,-2.79635c-2.19146,-0.36554 -4.3578,-1.30519 -5.5834,-2.75281c-0.68477,-1.6884 0.28563,-3.46769 0.8031,-5.11397c1.54403,-3.57462 5.73965,-6.94535 10.98682,-6.95411c3.22093,0.0367 6.5341,1.84343 7.08467,4.30556c0.41807,2.58883 -0.93706,5.22613 -0.05382,7.77837c2.1446,0.89637 -1.46336,2.26344 -1.5409,3.50063c-0.91459,1.79931 1.17274,3.88884 -0.61448,5.5105c-1.11823,1.19403 -3.72644,1.8536 -3.77226,3.44269c-0.64211,1.43081 -3.61047,1.32327 -5.0934,2.2552c-1.63881,0.36507 -2.53626,2.44076 -0.02632,2.02768c2.44697,-0.04568 4.88251,-0.74046 7.32351,-0.42231c1.7477,0.90372 -0.07579,2.70077 -1.83483,1.85116c-0.91889,0.01067 -4.31135,0.35682 -3.15581,1.10608c2.89047,0.511 6.02467,1.17224 7.89648,3.05904c1.7542,1.7702 -2.14194,2.19292 -2.91744,0.63665c-3.24419,-2.00504 -8.12296,-3.0863 -11.93449,-1.33447c-2.3057,0.72977 -1.77162,2.61414 -2.01488,4.01677c-0.93828,0.77567 -2.23084,-0.32168 -2.49706,-1.00785l0,0zm16.85971,-19.5993c-0.7776,-1.1002 -4.6567,-2.18505 -5.18428,-0.60063c0.2962,1.61456 3.2996,1.99688 4.90251,1.33771c0.29183,-0.16807 0.4126,-0.47663 0.28176,-0.73708l0,0z" stroke-width="1.5" stroke="#000" fill="#4f4f4f"/>
+                            <path id="svg_77" d="m92.3578,530.16484c-1.37831,-1.98193 2.90666,-2.99826 1.7985,-4.84284c-1.76725,-1.17998 -4.41491,-0.90434 -6.61746,-0.81426c-2.37909,-0.21828 -3.07572,1.59648 -4.44725,2.35057c-2.7045,-0.62888 -1.73728,-3.23951 0.72913,-3.529c3.22541,-1.03936 6.78629,-0.44188 10.13647,-0.90247c2.42449,-1.05125 -0.57164,-3.30882 -2.47553,-3.54872c-3.15093,-0.94763 -7.04248,-0.97284 -9.45043,-2.96909c-0.9575,-1.55511 -0.70914,-4.40083 1.87258,-4.94556c1.17006,-1.47418 0.92545,-3.37261 0.6179,-5.00942c0.26254,-1.74057 -4.92521,-0.72111 -2.74847,-2.50554c1.96298,-1.12027 4.49393,-1.80697 6.97357,-1.77955c2.0231,0.04986 2.16102,1.7839 -0.0694,1.35927c-2.26866,0.84875 -1.42404,3.27672 -1.33736,4.82914c1.09463,1.56457 4.06635,0.73709 5.99373,0.97139c2.74186,0.05487 4.0088,0.06106 6.60908,0.71902c2.62992,-0.14482 1.59409,-2.8311 0.0315,-3.01712c-2.40354,-0.3944 -4.77953,-1.40823 -6.12373,-2.97014c-0.75104,-1.8217 0.31327,-3.74146 0.88082,-5.51771c1.69345,-3.85682 6.2951,-7.49367 12.05006,-7.50313c3.53264,0.03959 7.16643,1.98897 7.77029,4.64548c0.45853,2.79321 -1.02774,5.63872 -0.05903,8.39245c2.35214,0.96714 -1.60498,2.44213 -1.69002,3.777c-1.00309,1.94136 1.28623,4.19585 -0.67395,5.94554c-1.22644,1.28829 -4.08706,1.99994 -4.13732,3.71448c-0.70424,1.54377 -3.95987,1.42774 -5.58631,2.43324c-1.79741,0.39389 -2.78171,2.63345 -0.02886,2.18776c2.68377,-0.04929 5.35501,-0.79891 8.03223,-0.45565c1.91683,0.97507 -0.08313,2.91399 -2.01239,1.99731c-1.00782,0.01151 -4.72857,0.38499 -3.46121,1.1934c3.17019,0.55135 6.6077,1.26479 8.66066,3.30055c1.92397,1.90995 -2.34923,2.36604 -3.19978,0.68691c-3.55815,-2.16333 -8.90905,-3.32995 -13.08944,-1.43983c-2.52883,0.78738 -1.94307,2.82053 -2.20986,4.33389c-1.02908,0.83691 -2.44673,-0.34708 -2.73872,-1.08742l0,0zm18.4913,-21.14662c-0.85285,-1.18706 -5.10735,-2.35755 -5.68598,-0.64805c0.32486,1.74203 3.61892,2.15453 5.37695,1.44331c0.32008,-0.18134 0.45252,-0.51426 0.30903,-0.79527l0,0z" stroke-width="1.5" stroke="#000" fill="#4f4f4f"/>
+                            <path id="svg_78" d="m128.27015,589.10458c-1.45939,-1.64355 3.07764,-2.48636 1.90429,-4.01601c-1.87121,-0.97852 -4.67461,-0.74994 -7.00672,-0.67524c-2.51904,-0.18101 -3.25664,1.32391 -4.70886,1.94925c-2.86359,-0.52151 -1.83947,-2.68642 0.77202,-2.92648c3.41513,-0.86191 7.18548,-0.36644 10.73273,-0.74839c2.56711,-0.87177 -0.60527,-2.7439 -2.62115,-2.94284c-3.33628,-0.78584 -7.45674,-0.80675 -10.00634,-2.46217c-1.01382,-1.2896 -0.75085,-3.64947 1.98273,-4.10119c1.23889,-1.22249 0.97989,-2.7968 0.65424,-4.15415c0.27798,-1.4434 -5.21493,-0.59799 -2.91014,-2.07776c2.07845,-0.92901 4.75827,-1.49846 7.38378,-1.47572c2.1421,0.04135 2.28814,1.47933 -0.07348,1.1272c-2.40211,0.70384 -1.50781,2.71728 -1.41603,4.00465c1.15902,1.29745 4.30554,0.61125 6.3463,0.80554c2.90315,0.0455 4.24461,0.05063 6.99785,0.59626c2.78463,-0.1201 1.68786,-2.34774 0.03335,-2.502c-2.54493,-0.32706 -5.06067,-1.1678 -6.48395,-2.46304c-0.79521,-1.51068 0.33169,-3.10267 0.93263,-4.57566c1.79306,-3.19834 6.6654,-6.21426 12.75889,-6.2221c3.74044,0.03283 7.58799,1.64939 8.22736,3.85235c0.4855,2.31632 -1.08819,4.67601 -0.0625,6.9596c2.4905,0.80202 -1.69939,2.02518 -1.78943,3.13214c-1.0621,1.60991 1.3619,3.47949 -0.71359,4.93045c-1.29859,1.06834 -4.32748,1.65848 -4.38069,3.0803c-0.74567,1.2802 -4.1928,1.18398 -5.91491,2.01781c-1.90314,0.32664 -2.94534,2.18384 -0.03056,1.81424c2.84164,-0.04087 5.67002,-0.66251 8.50472,-0.37785c2.02958,0.80859 -0.08802,2.41648 -2.13077,1.6563c-1.0671,0.00955 -5.00673,0.31926 -3.66482,0.98965c3.35668,0.45721 6.99639,1.04885 9.17011,2.73704c2.03714,1.58386 -2.48742,1.96208 -3.388,0.56963c-3.76745,-1.79398 -9.43311,-2.76142 -13.85941,-1.194c-2.67758,0.65295 -2.05737,2.33897 -2.33986,3.59395c-1.08961,0.69402 -2.59065,-0.28782 -2.89982,-0.90176l0,0zm19.57903,-17.53622c-0.90302,-0.98439 -5.40778,-1.95504 -6.02045,-0.5374c0.34397,1.44461 3.8318,1.78669 5.69324,1.19689c0.3389,-0.15038 0.47914,-0.42646 0.32721,-0.65949l0,0z" stroke-width="1.5" stroke="#000" fill="#4f4f4f"/>
+                            <rect onclick="showShelfInfo(this.id)" class="shelf" id="23" stroke="#000" height="86.99999" width="26" y="512.05" x="1.5" stroke-width="1.5" fill="#4f4f4f"/>
+                            <text stroke="#000" transform="rotate(-90 14.244103431701776,557.1879272460939) matrix(0.7453040480613708,0,0,0.7224096655845642,5.221267014741898,149.3262505196035) " xml:space="preserve" text-anchor="start" font-family="Times New Roman, Times, serif" font-size="24" id="svg_80" y="572.56676" x="-37.09417" stroke-width="0" fill="#fff">tidskrifter</text>
+                            <line stroke="#000" stroke-linecap="null" stroke-linejoin="null" id="svg_81" y2="402.05" x2="456.5" y1="402" x1="350.5" stroke-width="1.5" fill="none"/>
+                            <line stroke-linecap="null" stroke-linejoin="null" id="svg_82" y2="439.05" x2="562.5" y1="440.05" x1="456.5" stroke-width="1.5" stroke="#000" fill="none"/>
+                        </g>
+                    </svg>
+                    <div style="background-color: #007bff; width: 100%; height: 4px; box-shadow: 2px 0.5px 6px 0px gray;"></div>
+                    <svg viewBox="0 0 800 85"xmlns="http://www.w3.org/2000/svg" id="guideSVG">
+                        <g>
+                        <rect x="-1" y="-1" width="797" height="81" id="canvas_background" fill="#fff"/>
+                        <g id="canvasGrid" display="none">
+                        <rect id="svg_1" width="100%" height="100%" x="0" y="0" stroke-width="0" fill="url(#gridpattern)"/>
+                        </g>
+                        </g>
+                        <g>
+                        <rect fill="#4f4f4f" stroke="#000" stroke-width="1.5" x="10.5" y="31.05" width="109" height="17"/>
+                        <rect fill="#4f4f4f" stroke="#000" stroke-width="1.5" x="148.5" y="5.05" width="26" height="75"/>
+                        <line stroke-linecap="null" stroke-linejoin="null" y2="57.04999" x2="124" y1="23.04999" x1="143" fill-opacity="null" stroke-opacity="null" stroke-width="1.5" stroke="#000" fill="none"/>
+                        <text xml:space="preserve" text-anchor="start" font-family="Times New Roman, Times, serif" font-size="30" y="48.05" x="191.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">= Hylla</text>
+                        <rect id="52" height="43" width="97" y="19.05" x="328.5" stroke-width="1.5" stroke="#000" fill="#cccccc"/>
+                        <text fill="#000000" stroke="#000" stroke-width="0" stroke-opacity="null" fill-opacity="null" x="444.5" y="48.05" font-size="30" font-family="Times New Roman, Times, serif" text-anchor="start" xml:space="preserve">= Bord</text>
+                        <rect stroke="#000" fill="#fff" stroke-width="1.5" x="578.5" y="5.05" width="4" height="70"/>
+                        <text xml:space="preserve" text-anchor="start" font-family="Times New Roman, Times, serif" font-size="30" y="48" x="606.5" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000">= Glasfönster</text>
+                        </g>
+                    </svg>
+                </div>
+            </div>
+        </div>
 
         <div class="row mt-5">
             <div class="col-12">
@@ -177,7 +611,705 @@
             </div>
         </div>
 
-        <div id="usefulLinksImport"></div> <!-- HTML Import av usefulLinks.html -->
+        <div id="usefulLinksImport">
+            <div class="row justify-content-center" id="collapsablesRow">
+                <div class="col-10 col-lg-8" id="collapsables">
+                    <div class="row justify-content-center"> <!-- Första 3 Titlar -->
+                        <div class="col-4 Left" id="linkBtn" style="background-image: url(Bilder/Djur.jpg);">
+                            <a data-toggle="collapse" aria-expanded="false" href="#djurCollapse">
+                                <h3 class="text-center småText">Djur</h3>
+                            </a>
+                        </div>
+                        <div class="col-4" id="linkBtn" style="background-image: url(Bilder/Pengar.jpg);">
+                            <a data-toggle="collapse" aria-expanded="false" href="#ekonomiCollapse">
+                                <h3 class="text-center småText">Ekonomi</h3>
+                            </a>
+                        </div>
+                        <div class="col-4 Right" id="linkBtn" style="background-image: url(Bilder/Energi.jpg);">
+                            <a data-toggle="collapse" aria-expanded="false" href="#energiMiljöCollapse">
+                                <h3 class="text-center">Energi & Miljö</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row"> <!-- Första 3 länksamlingar -->
+                        <div class="col-12 collapse" data-parent="#collapsables" id="djurCollapse">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <dl>
+                                        <h4 class="mt-3">Allmänt & blandat</h4>
+                                        <dt><a target="_blank" rel="nofollow" href="https://www.agria.se/fraga-veterinaren/">Agria</a></dt>
+                                            <dd> - fråga veterinären om djursjukdomar (hund, katt, häst, smådjur, fågel, lantbruk)</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="https://www.folkbildning.net/amnen/natur-teknik-miljo/djur/?sort=UpdateDate&dir=desc">Djur Folkbildningsnätet</a></dt>
+                                            <dd> - länksamlingsdel indelad i olika kategorier</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="http://www.djur.cob.lu.se/Fraga_zoofys.html">Fråga en zoofysiolog</a></dt>
+                                            <dd> - fakta och förklaringar om hur kroppen fungerar hos djur</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="https://djur.jordbruksverket.se/amnesomraden/djur.4.5abb9acc11c89b20e9e8000333.html">Jordbruksverket, Djur</a></dt>
+                                            <dd> - djurskydd, lagar, bestämmelser, utrotningshotade arter med mera</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="http://www.rovdjur.se/">Svenska Rovdjursföreningen</a></dt>
+                                            <dd> - fakta, utbredning, status om svenska rovdjur och rovfåglar</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="http://animaldiversity.org/">Animal Diversity Web</a></dt>
+                                            <dd> - Museum of Zoology på Michigan University</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="http://animalfactguide.com/animal-facts/">Animal Facts for Kids</a></dt>
+                                        <dt><a target="_blank" rel="nofollow" href="https://www.nationalgeographic.com/animals/facts-pictures/">Animal Facts NationalGeographic</a></dt>
+                                        <dt><a target="_blank" rel="nofollow" href="http://www.animalinfo.org/groupind.htm">Animal Info</a></dt>
+                                        <dt><a target="_blank" rel="nofollow" href="https://www.wildscreen.org/arkive-closure/">ARKive</a></dt>
+                                            <dd> - "a multimedia guide to the world's endangered species". videos, photos, facts & education resources</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="https://a-z-animals.com/">A-Z Animals</a></dt>
+                                        <dt><a target="_blank" rel="nofollow" href="https://eol.org/">Encyclopedia of Life</a></dt>
+                                            <dd> - se längst ner på sidan Learn more about...</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="http://www.nature.ca/notebooks/english/mon2.htm">Natural History Woorkbooks</a></dt>
+                                            <dd> - Canadian Museum of Nature</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="http://afs.okstate.edu/breeds/">Breeds of Livestock, Department of Animal Science</a></dt>
+                                            <dd> - (nötkreatur, häst, får, get, svin, fjäderfä)</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="https://sv.wikipedia.org/wiki/Portal:Djur">Wikipedia:Djur</a></dt>
+                                            <dd> - var noggrann i källkritiken, använd gärna den engelska artikelns källor</dd>
+                                    </dl>
+                                </div>
+                                <div class="col-12 col-md-6" style="border-left: .175rem solid #5788fa; margin: 15px 0px;" id="djurLänkar">
+                                    <dl>
+                                        <h4>Länksamlingar</h4>
+                                        <dt><a target="_blank" rel="nofollow" href="https://sites.google.com/site/ribibliotekets/djur#S%C3%A4llskapsdjur">Sällskapsdjur</a></dt>
+                                            <dd> - Många olika djur</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="https://sites.google.com/site/ribibliotekets/djur#D%C3%A4ggdjur">Däggdjur</a></dt>
+                                        <dt><a target="_blank" rel="nofollow" href="https://sites.google.com/site/ribibliotekets/djur#Fiskar">Fiskar</a></dt>
+                                        <dt><a target="_blank" rel="nofollow" href="https://sites.google.com/site/ribibliotekets/djur#Kr%C3%A4ldjur">Kräldjur</a></dt>
+                                        <dt><a target="_blank" rel="nofollow" href="https://sites.google.com/site/ribibliotekets/djur#Ryggradsl%C3%B6sa%20djur">Ryggradslösa djur</a></dt>
+                                        <dt><a target="_blank" rel="nofollow" href="https://sites.google.com/site/ribibliotekets/djur#F%C3%A5glar">Fåglar</a></dt>
+                                        <dt><a target="_blank" rel="nofollow" href="https://sites.google.com/site/ribibliotekets/djur#Hund">Hund</a></dt>
+                                        <dt><a target="_blank" rel="nofollow" href="https://sites.google.com/site/ribibliotekets/djur#H%C3%A4st">Häst</a></dt>
+                                        <dt><a target="_blank" rel="nofollow" href="https://sites.google.com/site/ribibliotekets/djur#Katt">Katt</a></dt>
+                                        <dt><a target="_blank" rel="nofollow" href="https://sites.google.com/site/ribibliotekets/djur#Sm%C3%A5djur">Smådjur</a></dt>
+                                            <dd> - T.ex marsvin, hamstrar, kaniner</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="https://sites.google.com/site/ribibliotekets/djur#Akvarie-%20&%20terrariedjur">Akvarie & terrariedjur</a></dt>
+                                        <dt><a target="_blank" rel="nofollow" href="https://sites.google.com/site/ribibliotekets/djur#Fj%C3%A4derf%C3%A4">Fjäderfä</a></dt>
+                                        <dt><a target="_blank" rel="nofollow" href="https://sites.google.com/site/ribibliotekets/djur#F%C3%A5r%20&%20getter">Får & getter</a></dt>
+                                        <dt><a target="_blank" rel="nofollow" href="https://sites.google.com/site/ribibliotekets/djur#N%C3%B6tkreatur">Nötkreatur</a></dt>
+                                        <dt><a target="_blank" rel="nofollow" href="https://sites.google.com/site/ribibliotekets/djur#Svin">Svin</a></dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 collapse " data-parent="#collapsables" id="ekonomiCollapse">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <dl>
+                                        <dt><a target="_blank" rel="nofollow" href="http://www.businessdictionary.com/">BusinessDictionary</a></dt>
+                                        <dd>- uppslagsverk.</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="https://www.ekonomifakta.se/">Ekonomifakta</a></dt>
+                                        <dd>- grundläggande fakta om svensk ekonomi</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="https://www.foretagskallan.se/">Företagskällan</a></dt>
+                                        <dd>- om svenskt näringsliv från 1800-t och framåt</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="http://www.hetwebsite.net/het/">History of Economic thought</a></dt>
+                                        <dd>- nationalekonomins historia</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="http://www.oecd.org/economy/">OECD: Economy</a></dt>
+                                        <dd>- olika rapporter och analyser av ekonomin och den ekonomiska utvecklingen, i medlemsländerna och andra länder</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="https://Verksamt.se">Verksamt.se</a></dt>
+                                        <dd>- info för de som ska starta eller driver företag</dd>
+                                    </dl>
+                                </div>
+                                <div class="col-12 col-md-6" style="border-left: .175rem solid #5788fa; margin: 15px 0px;">
+                                    <dl>
+                                        <h4> Länksamlingar</h4>
+                                        <dt><a target="_blank" rel="nofollow" href="http://Inetmedia.nu">Inetmedia.nu</a></dt>
+                                        <dd>- ekonomi</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="https://www.folkbildning.net/amnen/internationellt/internationell-ekonomi-handel/?sort=UpdateDate&amp;dir=desc">Internationell ekonomi  och handel</a></dt>
+                                        <dt><a target="_blank" rel="nofollow" href="http://www.blinfo.se/lanksamling__11624">Länksamling</a></dt>
+                                        <dd>- skatt och redovisning</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="https://botw.org/top/Business/Business_to_Business/Financial_Services/">Best of the web</a></dt>
+                                        <dd>- finance</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="http://www.ultimatedir.com/business_and_economy/">Ultimatedir.com</a></dt>
+                                        <dd>- business and economy</dd>
+                                    </dl>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="col-12 collapse" data-parent="#collapsables" id="energiMiljöCollapse">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <dl>
+                                        <dt><a target="_blank" rel="nofollow" href="http://www.eoearth.org">Encyclopedia of Earth</a></dt>
+                                        <dd>- t ex energi, föroreningar, väder och klimat</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="https://www.folkbildning.net/amnen/natur-teknik-miljo/energi/?sort=UpdateDate&amp;dir=desc">Energi Folkbildningsnätet</a></dt>
+                                        <dd>- länksamling</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="https://www.energiforsk.se/">Energiforsk</a></dt>
+                                        <dd>- fakta om energi, även klimat & miljö, för lärare och elever</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="http://energikunskap.se">Energikunskap</a></dt>
+                                        <dd>- nationalekonomins historia</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="http://www.energimyndigheten.se">Energimyndigheten</a></dt>
+                                        <dd>- statistik, förnybart, klimat & miljö, för hushåll, internationellt samarbete, forskning m.m.</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="http://www.forskning.se/amne/miljo/">Forskning.se</a></dt>
+                                        <dd>- Miljö - nyheter om forskningsresultat, innovationer och satsningar från svenska lärosäten och forskningsinstitut</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="https://globalarkivet.se/geografi">Globalarkivet</a></dt>
+                                        <dd>- artiklar om global rättvisa och hållbar utveckling i världen, se t ex Klimat & klimatförhållanden</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="http://www.globalamalen.se/">Globala målen</a></dt>
+                                        <dd>- United Nations Development Programmes sida för att skapa medvetenhet att kunna avskaffa extrem fattigdom, minska ojämlikheter, lösa klimatkrisen, främja fred och rättvisa</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="https://www.makupalat.fi/sv/k/1907/hae?category=113761&amp;sort=title&amp;order=asc&amp;f%5B0%5D=language%3Asv">Länkbiblioteket</a></dt>
+                                        <dd>- världen, naturen, rymden - omfattande länksamling från bibliotek i Finland. Mest material på svenska och engelska.</dd>
+                                    </dl>
+                                </div>
+                                <div class="col-12 col-md-6" style="border-left: .175rem solid #5788fa; margin: 15px 0px;">
+                                    <dl>
+                                        <dt><a target="_blank" rel="nofollow" href="http://www.miljoportalen.se">Miljöportalen</a></dt>
+                                        <dd>- för gymnasieungdomar, aktuell forskning om miljö och hållbar utveckling</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="http://www.naturskyddsforeningen.se">Naturskyddsföreningen</a></dt>
+                                        <dd>- naturfrågor, t ex klimat, energi, hav, skog, jordbruk & mat, djur & natur</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="http://www.naturvardsverket.se/sv/">Naturvårdsverket</a></dt>
+                                        <dd>- läs om bl a klimat och naturvård</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="http://www.ne.se/temapaket/mat-och-milj%C3%B6">NE temapaket Mat & miljö</a></dt>
+                                        <dd>- (kräver egen inloggning hemifrån)</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="http://ki.se/imm/riskwebben">Riskwebben</a></dt>
+                                        <dd>- miljögifter</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="http://www.smhi.se">SMHI</a></dt>
+                                        <dd>- klimatfakta, kolla främst Klimatdata och Kunskapsbanken</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="https://supermiljobloggen.se/">Supermiljöbloggen</a></dt>
+                                        <dd>- statistik, fakta, debatt och diskussion kring miljöfrågor</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="http://www.tekniskamuseet.se/1/181.html">Tekniska museet</a></dt>
+                                        <dd>- energi & miljö - förnybar e, vad är e?, vatten- och kärnkraft</dd>
+                                        <dt><a target="_blank" rel="nofollow" href="http://www.wwf.se/">Världsnaturfonden</a></dt>
+                                        <dd>- fakta om bl a natur, miljö och hållbar utveckling</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="row justify-content-center"> <!-- Andra 3 titlarna-->
+                        <div class="col-4" id="linkBtn" style="background-image: url(Bilder/Kända\ pers.jpg);">
+                            <a data-toggle="collapse" aria-expanded="false" href="#kändaPersonerCollapse">
+                                <h3 class="text-center">Kända Personer</h3>
+                            </a>
+                        </div>
+                        <div class="col-4" id="linkBtn" style="background-image: url(Bilder/Historia.jpg);">
+                            <a data-toggle="collapse" aria-expanded="false" href="#historiaCollapse">
+                                <h3 class="text-center småText">Historia</h3>
+                            </a>
+                        </div>
+                        <div class="col-4" id="linkBtn" style="background-image: url(Bilder/Litteratur.jpg);">
+                            <a data-toggle="collapse" aria-expanded="false" href="#litteraturCollapse">
+                                <h3 class="text-center småText">Litteratur</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row"> <!-- Andra 3 länksamlingarna-->
+                        <div class="col-12 collapse" data-parent="#collapsables" id="kändaPersonerCollapse">
+                            <dl>
+                                <dt><a target="_blank" rel="nofollow" href="http://biography.com/">Biography.com</a></dt>
+                                <dd> - ca 7 000 biografier</dd>
+                                <dt><a target="_blank" rel="nofollow" href="http://scienceworld.wolfram.com/biography/">Eric Weisstein's world of scientific biography</a></dt>
+                                <dd> - vetenskapsmän</dd>
+                                <dt><a target="_blank" rel="nofollow" href="https://personeroamnen.blogspot.com/p/p.html">Kända personer</a></dt>
+                                <dd> - lista över tidningsartiklar och bokkapitel (samtliga finns i Rudbecksgymnasiets bibliotek)</dd>
+                                <dt><a target="_blank" rel="nofollow" href="http://nad.riksarkivet.se/sbl/Start.aspx">Svenskt biografiskt lexikon</a></dt>
+                                <dd> - ca 12 000 personer, 1000-t framåt</dd>
+                                <dt><a target="_blank" rel="nofollow" href="https://skbl.se/sv">Svenskt kvinnobiografiskt lexikon</a></dt>
+                                <dd>- ca 1 000 svenska kvinnor från medeltid - nutid</dd>
+                            </dl>
+                        </div>
+                        <div class="col-12 collapse" data-parent="#collapsables" id="historiaCollapse">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <dl>
+                                        <h4 class="mt-3">Allmän historia</h4>
+                                        <dt> <a href="http://www.levandehistoria.se/" target="_blank" rel="nofollow">Forum för levande historia</a> </dt>
+                                        <dd>- t ex Förintelsen, kriget i forna Jugoslavien, folkmordet i Rwanda</dd>
+                                        <dt> <a href="http://historia.se/" target="_blank" rel="nofollow">historia.se</a> </dt>
+                                        <dd>- historisk statistik, prisomräknare</dd>
+                                        <dt> <a href="https://personeroamnen.blogspot.com/p/artiklar-om-olika-amnen.html" target="_blank" rel="nofollow">Kända personer/ämnesartiklar</a> </dt>
+                                        <dd>- hänvisning till böcker och tidningsartiklar som finns i Ru-bibblan</dd>
+                                        <dt> <a href="http://www.larshammaren.se" target="_blank" rel="nofollow">Lars Hammaréns historiesida</a> </dt>
+                                        <dd>- en Komvuxlärares sida om olika ämnen inom historia</dd>
+                                        <dt> <a href="http://www.militarhistoria.se" target="_blank" rel="nofollow">Militärhistoria</a> </dt>
+                                        <dd>- artiklar om krig och krigföring</dd>
+                                        <dt> <a href="http://www.popularhistoria.se" target="_blank" rel="nofollow">Populär historia</a> </dt>
+                                        <dd>- tidskriftens artiklar och länkar, enklast</dd>
+                                        <dd>- sök via Google site:popularhistoria.se + sökord</dd>
+                                        <dt> <a href="http://sondera.kb.se" target="_blank" rel="nofollow">Sondera</a> </dt>
+                                        <dd>- samsök i tre databaser och se hur en person eller händelse har dokumenterats i TV, radio, skrift och originalhandlingar</dd>
+                                        <dt> <a href="https://varldenshistoria.se/" target="_blank" rel="nofollow">Världens historia </a> </dt>
+                                        <dd>- artiklar om t ex första och andra världskriget, kalla kriget, vietnamkriget, uppfinningar och mycket mer, (x antal fria artiklar)</dd>
+                                        <dt> <a href="http://afe.easia.columbia.edu/index.html" target="_blank" rel="nofollow">Asia for Educators</a> </dt>
+                                        <dd>- Östasiatisk historia; Japan, Kina, Korea</dd>
+                                        <dt> <a href="http://besthistorysites.net" target="_blank" rel="nofollow">Best history of websites</a> </dt>
+                                        <dd>- över 1000 kvalitetsgranskade sidor om historia</dd>
+                                        <dt> <a href="http://www.history.com/topics" target="_blank" rel="nofollow">History.com</a> </dt>
+                                        <dd>- amerikansk TV-kanal med många artiklar om fenomen, händelser och personer</dd>
+                                        <dt> <a href="http://www.historyworld.net" style="font-family:verdana,sans-serif" target="_blank" rel="nofollow">HistoryWorld</a> </dt>
+                                        <dd>- faktaartiklar och tidslinjer</dd>
+                                        <dt> <a href="http://legacy.fordham.edu/Halsall/index.asp" target="_blank" rel="nofollow">Internet History Sourcebooks Project</a> </dt>
+                                        <dd>- historiska texter i undervisningssyfte, tidsmässig och regional indelning</dd>
+                                        <dt> <a href="https://home.heinonline.org/content/slavery-in-america-and-the-world-history-culture-law/" target="_blank" rel="nofollow">Slavery in America and the World: History, Culture &amp; Law</a> </dt>
+                                        <dd>- fritt tillgänglig efter att du skapat ett konto</dd>
+                                    </dl>
+                                </div>
+                                <div class="col-12 col-md-6" style="border-left: .175rem solid #5788fa; margin: 15px 0px;">
+                                    <dl>
+                                        <dt> <a href="http://spartacus-educational.com/" target="_blank" rel="nofollow">Spartacus Educational</a> </dt>
+                                        <dd>- historiskt uppslagsverk med studerande som främsta målgrupp</dd>
+                                        <dt> <a href="http://www.coldwar.org" target="_blank" rel="nofollow">ColdWarMuseum</a> </dt>
+                                        <dd>- om kalla kriget 1940-90-talet</dd>
+                                        <dt> <a href="http://FirstWorldWar.com" target="_blank" rel="nofollow">FirstWorldWar.com</a> </dt>
+                                        <dd>- text, ljud, bild och film om första världskriget</dd>
+                                        <dt> <a href="http://www.militaryhistoryonline.com" target="_blank" rel="nofollow">Military History Online</a> </dt>
+                                        <dt> <a href="http://ww2db.com" target="_blank" rel="nofollow">World War II Database</a> </dt>
+                                        <dd>- utförlig webbplats om andra världskriget</dd>
+                                        <dt> <a href="http://www.foodtimeline.org/" target="_blank" rel="nofollow">The food timeline</a> </dt>
+                                        <dd>- mat genom tiderna </dd>
+                                        <dt> <a href="http://www.siue.edu/COSTUMES/history.htm" target="_blank" rel="nofollow">The history of costume</a> </dt>
+                                        <dd>- bilder på historiska dräkter</dd>
+        
+                                        <br>
+                                        <h4>Kvinnohistoria</h4>
+                                        <dt> <a href="http://www.ub.gu.se/kvinn/portaler/" target="_blank" rel="nofollow">Kvinnohistoriska portaler</a> </dt>
+                                        <dd>- Göteborgs universitet</dd>
+                                        <dd>- t ex kamp för rösträtt, arbete o kunskap ; krig o fred ; kärlek, makt o systerskap</dd>
+                                        <dt> <a href="http://www.womeninworldhistory.com/" target="_blank" rel="nofollow">Women in World History</a> </dt>
+                                        <dt> <a href="http://legacy.fordham.edu/halsall/women/womensbook.asp" target="_blank" rel="nofollow">Women's History Sourcebook</a> </dt>
+                                        <dt> <a href="http://www.iisg.nl/w3vlwomenshistory/" target="_blank" rel="nofollow">WWW Virtual Library Women's History</a> </dt>
+        
+                                        <br>
+                                        <h4>Svensk historia</h4>
+                                        <dt> <a href="https://digitaltmuseum.org/" target="_blank" rel="nofollow">DigitaltMuseum</a> </dt>
+                                        <dd>- tillgängliggör svenska (norska) museers samlingar</dd>
+                                        <dt> <a href="http://www.historiesajten.se/index.asp" target="_blank" rel="nofollow">Historiesajten</a> </dt>
+                                        <dd>- personer, regenter, slott, krig, fred m.m.</dd>
+                                        <dt> <a href="http://www.historiska.se/historia/" target="_blank" rel="nofollow">Historiska museet</a> </dt>
+                                        <dd>- stenåldern t o m medeltiden</dd>
+                                        <dt> <a href="http://tacitus.nu/" target="_blank" rel="nofollow">Tacitus.nu</a> </dt>
+                                        <dd>- personer, politik, historisk atlas m. statistik</dd>
+                                        <dt> <a href="https://extra.orebro.se/stadsarkivet.4.25c3cae1152fe3754e21573a.html" target="_blank" rel="nofollow">Örebro stadsarkiv</a> </dt>
+        
+                                        <br>
+                                        <h4>Historiska kartor</h4>
+                                        <dt> <a href="http://www.lib.utexas.edu/maps/historical/index.html" target="_blank" rel="nofollow">Perry-Castaneda Library Map Collection</a> </dt>
+                                        <dt> <a href="http://Tacictus.nu" target="_blank" rel="nofollow">Tacictus.nu</a> </dt>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 collapse" data-parent="#collapsables" id="litteraturCollapse">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <dl>
+                                        <h4 class="mt-3">Databaser</h4>
+                                        <dt> <a href="http://www.alex.se" target="_blank" rel="nofollow">Alex </a> </dt>
+                                            <dd>- författarlexikon, temaartiklar (från datorer anslutna till skolans nätverk)</dd>
+        
+                                        <br>
+                                        <h4>Böcker on-line, ett urval - se mer </h4>
+                                        <dt> <a href="http://www.classicreader.com" target="_blank" rel="nofollow">ClassicReader</a> </dt>
+                                            <dd>- klassisk litteratur på engelska</dd>
+                                        <dt> <a href="https://litteraturbanken.se/" target="_blank" rel="nofollow">Litteraturbanken</a> </dt>
+                                            <dd>- klassisk svensk skönlitteratur</dd>
+                                        <dt> <a href="http://www.gutenberg.org/wiki/Main_Page" target="_blank" rel="nofollow">Project Gutenberg </a> </dt>
+                                            <dd>- över 38 000 klassiska litterära verk på engelska</dd>
+                                        <dt> <a href="http://runeberg.org" target="_blank" rel="nofollow">Projekt Runeberg </a> </dt>
+                                            <dd>- klassisk nordisk litteratur</dd>
+                                        <dt> <a href="http://shakespeare.mit.edu" target="_blank" rel="nofollow">The Complete Works of William Shakespeare</a> </dt>
+                                    </dl>
+                                </div>
+                                    <div class="col-12 col-md-6" style="border-left: .175rem solid #5788fa; margin: 15px 0px;">
+                                        <dl>
+                                            <h4>Blandat</h4>
+                                            <dt> <a href="http://www.mymcpl.org/books-movies-music/based-book" target="_blank" rel="nofollow">Based on the book</a> </dt>
+                                                <dd>- Böcker som blivit film, även bokpriser, böcker on-line</dd>
+                                            <dt> <a href="http://www.dikter.biblioteket.se" target="_blank" rel="nofollow">Dikter.biblioteket.se</a> </dt>
+                                                <dd>- Letar du efter en särskild dikt? Här kan du söka efter i vilken bok dikten finns.</dd>
+                                            <dt> <a href="http://www.diktkonst.se" target="_blank" rel="nofollow">Diktkonst</a> </dt>
+                                                <dd>- Sök efter ämnesinordnade dikter av okända personer</dd>
+                                            <dt> <a href="https://urplay.se/program/158019-hej-litteraturen-antiken#Om-serien" target="_blank" rel="nofollow">Hej litteraturen</a> </dt>
+                                                <dd>- den västerländska litteraturhistorien från antiken till våra dagar, filmer från UR</dd>
+                                            <dt> <a href="http://Litteraturhistorien.se" target="_blank" rel="nofollow">Litteraturhistorien.se</a> </dt>
+                                                <dd>- pågående projekt av fil.kand. i litteraturvetenskap. allmänt om epoker, författare, termer...</dd>
+                                            <dt> <a href="http://nordicwomensliterature.net/sv" target="_blank" rel="nofollow">Nordisk kvinnolitteratur</a> </dt>
+                                                <dd>- 1000 år, mängder av artiklar om kvinnliga författare</dd>
+                                            <dt> <a href="https://varldslitteratur.se/" target="_blank" rel="nofollow">Världslitteratur.se</a> </dt>
+                                                <dd>- Litteratur från Afrika, Asien och Latinamerika</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                            
+        
+                        </div>
+                    </div>
+        
+                    <div class="row justify-content-center"> <!-- Tredje 3 titlarna-->
+                        <div class="col-4" id="linkBtn" style="background-image: url(Bilder/Länder.jpg);">
+                            <a data-toggle="collapse" aria-expanded="false" href="#länderCollapse">
+                                <h3 class="text-center småText">Länder</h3>
+                            </a>
+                        </div>
+                        <div class="col-4" id="linkBtn" style="background-image: url(Bilder/medicin.jpg);">
+                            <a data-toggle="collapse" aria-expanded="false" href="#medicinHälsaCollapse">
+                                <h3 class="text-center">Medicin & Hälsa</h3>
+                            </a>
+                        </div>
+                        <div class="col-4" id="linkBtn"style="background-image: url(Bilder/Naturvetenskap.png);">
+                            <a data-toggle="collapse" aria-expanded="false" href="#naturvetenskapCollapse">
+                                <h3 class="text-center" id="linkBtnText">Natur<span id="linkBtnSpan">vetenskap</span></h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row"> <!-- Tredje 3 länksamlingarna-->
+                        <div class="col-12 collapse" data-parent="#collapsables" id="länderCollapse">
+                            <div class="row">
+                                <div class="col-12 col-md-6">
+                                    <dl>
+                                        <dt> <a href="http://Geografi.nu" target="_blank" rel="nofollow">Geografi.nu</a> </dt>
+                                            <dd>- fakta om och bilder på världens länder</dd>
+                                        <dt> <a href="https://globalarkivet.se" target="_blank" rel="nofollow">Globalarkivet </a> </dt>
+                                            <dd>Se även: <a href="https://globalarkivet.se/amnen" target="_blank" rel="nofollow">Ämnen</a> - artiklar om globala rättvisefrågor, solidaritet och hållbar utveckling i hela världen</dd>
+                                        <dt> <a href="http://www.globalis.se/Laender" target="_blank" rel="nofollow">Globalis</a> </dt>
+                                            <dd>- FN-förbundets sida med information om länder och regioner, konflikter, världskartor, satellitkartor, avtal m.m.</dd>
+                                        <dt> <a href="http://globalportalen.org" target="_blank" rel="nofollow">Globalportalen</a> </dt>
+                                            <dd>- kilmat & miljö, mänskliga rättigheter, jämställdhet, migration, katastrofer, bistånd, demokrati, ekonomi, hälsa m.m.</dd>
+                                        <dt> <a href="http://www.regeringen.se/sveriges-regering/utrikesdepartementet/sveriges-diplomatiska-forbindelser/" target="_blank" rel="nofollow"> Länder och regeringar - Regeringen </a> </dt>
+                                        <dt> <a href="http://www.regeringen.se/regeringens-politik/demokrati-och-manskliga-rattigheter/rapporter-om-manskliga-rattigheter-i-varlden/" target="_blank" rel="nofollow">Regeringens webbplats om mänskliga rättigheter</a> </dt>
+                                        <dt> <a href="http://www.sida.se/svenska/har-arbetar-vi/" target="_blank" rel="nofollow">SIDA - Länder & regeringar</dt>
+                                        <dt> <a href="http://so-rummet.se/kategorier/geografi/varldsdelar-och-lander-geografi" target="_blank" rel="nofollow">SO-rummet - Geografi</a> </dt>
+                                        <dt> <a href="https://varldskoll.se/" target="_blank" rel="nofollow">Världskoll </a> </dt>
+                                            <dd>- FN-sida som jämför länder, visar på global utveckling och globala samband. </dd>
+                                        <dt> <a href="http://www.sakerhetspolitik.se" target="_blank" rel="nofollow">Säkerhetspolitik</a> </dt>
+                                            <dd>- konflikter & katastrofer, hot & risker, krisberedskap</dd>
+                                    </dl>
+                                </div>
+                                <div class="col-12 col-md-6" style="border-left: .175rem solid #5788fa; margin: 15px 0px;">
+                                    <dl>
+                                        <dt> <a href="http://www.utrikesmagasinet.se/" target="_blank" rel="nofollow">Utrikesmagasinet</a> </dt>
+                                            <dd>- Utrikespolitiska institutets analyser och krönikor om läget i världen </dd>
+                                        <dt> <a href="https://www.youtube.com/channel/UCubFHC3FeEfR-QU888VyQ9w" target="_blank">Utrikespolitiska institutet på Youtube</a> </dt>
+                                            <dd>- föreläsningar och seminarium om läget i världen </dd>
+                                        <dt> <a href="http://news.bbc.co.uk/2/hi/country_profiles/default.stm" target="_blank" rel="nofollow">BBC Country Profile</a> </dt>
+                                            <dd>- BBC:s länderfakta, även senaste nyhetsrapporteringen från olika länder</dd>
+                                        <dt> <a href="https://www.cia.gov/library/publications/the-world-factbook/index.html" target="_blank" rel="nofollow">CIA World Factbook</a> </dt>
+                                            <dd>- länderfakta från USA:s underrättelsetjänst</dd>
+                                        <dt> <a href="http://www.nationmaster.com/au" target="_blank" rel="nofollow">NationMaster</a> </dt>
+                                            <dd>- statistik från hela världen</dd>
+                                        <dt> <a href="http://www.library.utexas.edu/maps/" target="_blank" rel="nofollow">Perry-Castañeda Library Map Collection</a> </dt>
+                                            <dd>- många olika kartor över samma område, även historiska</dd>
+                                        <dt> <a href="http://www.worldvaluessurvey.org/WVSOnline.jsp" target="_blank" rel="nofollow">World Values Survey</a> </dt>
+                                            <dd>- uppgifter om värderingar inom en mängd ämnesområden i olika länder, forskningsprojekt fr o m 1981</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 collapse" data-parent="#collapsables" id="medicinHälsaCollapse">
+                            <div class="row">   
+                                <div class="col-12 col-md-6">
+                                    <dl>
+                                        <h4 class="mt-3">Blandat</h4>
+                                        <dt><a href="http://www.alternativmedicin.se/" target="_blank" rel="nofollow">Alternativmedicin</a></dt>
+                                            <dd>- naturmedicin, behandlingsformer, vitaminer & mineraler m.m. </dd>
+                                        <dt><a href="http://www.apoteket.se/" target="_blank" rel="nofollow">Apoteket&nbsp;</a></dt>
+                                            <dd>- fakta och rådgivning</dd>
+                                        <dt><a href="http://bibblanguidar.se/kategori/teknik-och-medicin#Medicin-och-h%C3%A4lsa" target="_blank" rel="nofollow">Bibblan guidar </a></dt>
+                                            <dd>- länksamling</dd>
+                                        <dt><a href="https://www.biodigital.com/" target="_blank" rel="nofollow">Biodigital</a> </dt>
+                                            <dd>- upplev kroppen i 3D, kräver konto som är gratis att registrera</dd>
+                                        <dt><a href="http://www.cancerfonden.se/" target="_blank" rel="nofollow">Cancerfonden</a></dt>
+                                            <dd>- information om många former av cancer</dd>
+                                        <dt><a href="http://www.forskning.se/amne/halsa-medicin/" target="_blank" rel="nofollow">Forskning.se - Medicin &amp; hälsa</a></dt>
+                                            <dd>- nyheter, teman, faktalänkar m.m</dd>
+                                        <dt><a href="http://healthyplace.com/" target="_blank" rel="nofollow">HealthyPlace.com</a> </dt>
+                                            <dd>- om "psychological disorders and psychiatric medications from both a consumer and expert point of view"</dd>
+                                        <dt><a href="http://www.lakartidningen.se/Sok-arkiv/" target="_blank" rel="nofollow">Läkartidningens artikelarkiv</a> </dt>
+                                            <dd>- artiklar från 1990-2013, sökning bl a på ämnesord</dd>
+                                        <dt><a href="https://www.makupalat.fi/sv/k/2824%2B2696/hae?category=114364&amp;sort=title&amp;order=asc&amp;f%5B0%5D=language%3Asv" rel="nofollow">Länkbiblioteket - hälsa och sjukdom</a> </dt>
+                                            <dd>- omfattande länksamling som drivs av bibliotek i Finland. Mkt material på svenska och engelska.</dd>
+                                        <dt><a href="http://medlineplus.gov/" target="_blank" rel="nofollow">MedLinePlus</a> </dt>
+                                            <dd>- från U.S National Library of Medicine</dd>
+                                        <dt><a href="https://www.nlm.nih.gov/medlineplus/mentalhealthandbehavior.html" target="_blank" rel="nofollow">Mental Health and Behavior</a> </dt>
+                                            <dd>- från U.S National Library of Medicine</dd>
+                                        <dt><a href="http://myright.se/" target="_blank" rel="nofollow">MyRight</a> </dt>
+                                            <dd>- funktionshinder och internationellt utvecklingssamarbete</dd>
+                                        <dt><a href="http://www.netdoktor.se/" target="_blank" rel="nofollow">Netdoktor</a> </dt>
+                                            <dd>- hälsoportal där svenska läkare och andra medicinska experter skriver artiklar</dd>
+                                        <dt><a href="http://Nutrititionsfakta.se" rel="nofollow">Nutrititionsfakta.se</a> </dt>
+                                            <dd>- kunskapsportal om mat och hälsa</dd>
+                                        <dt><a href="http://www.socialstyrelsen.se/ovanligadiagnoser" target="_blank" rel="nofollow">Ovanliga diagnoser</a> </dt>
+                                            <dd>- Socialstyrelsens sida om ovanliga sjukdomar/skador som leder till omfattande funktionshinder hos väldigt få människor</dd>
+                                        <dt><a href="http://rarelink.se" target="_blank" rel="nofollow">RareLink</a> </dt>
+                                            <dd>- nordisk länksamling för ovanliga diagnoser</dd>
+                                        <dt><a href="http://www.sbu.se/sv/" target="_blank" rel="nofollow">SBU- Kunskapscentrum för hälso- och sjukvården</a> </dt>
+                                            <dd>- forskningsresultat gällande medicinska metoder</dd>
+                                        <dt><a href="http://www.smittskyddsinstitutet.se/" target="_blank" rel="nofollow">Smittskyddsinstitutet</a> </dt>
+                                            <dd>- fakta om smittsamma sjukdomar, djurförsök, vaccinationer m.m.</dd>
+                                        <dt><a href="http://www.umo.se/" target="_blank" rel="nofollow">UMO</a> </dt>
+                                            <dd>- om kroppen, kärlek & vänskap, våld, att må dåligt... </dd>
+                                        <dt><a href="http://web4health.info/sv/index.shtml" target="_blank" rel="nofollow">Web4Health&nbsp;</a> </dt>
+                                            <dd>- information om psykisk hälsa</dd>
+                                        <dt><a href="https://www.vetenskaphalsa.se/" rel="nofollow">Vetenskap &amp; Hälsa</a> </dt>
+                                            <dd>- populärvetenskaplig forskning inom medicin och hälsa. teman, podd-avsnitt, tidskriftsartiklar, föreläsningar</dd>
+                                        <dt><a href="http://1177.se/" target="_blank" rel="nofollow">1177 Vårdguiden</a> </dt>
+                                            <dd>- information om hälsa och sjukvård från Sveriges landsting och Apoteket</dd>
+                                        <dt><a href="http://www.1177.se/Orebrolan/Tema/Kroppen/" target="_blank" rel="nofollow">1177 Vårdguiden - Kroppen</a> </dt>
+                                            <dd>- fakta i ord och bild om hur kroppen är uppbyggd och fungerar</dd>
+                                    </dl>
+                                </div>
+                                <div class="col-12 col-md-6" style="border-left: .175rem solid #5788fa; margin: 15px 0px;">
+                                    <dl>
+                                        <h4>Folkhälsa</h4>
+                                        <dt><a href="http://www.folkhalsoguiden.se/" target="_blank" rel="nofollow">Folkhälsoguiden</a> </dt>
+                                            <dd>- från Stockholms läns landsting och Karolinska Institutets folkhälsoakademi</dd>
+                                        <dt><a href="http://www.folkhalsomyndigheten.se/amnesomraden/" target="_blank" rel="nofollow"><br>Folkhälsomyndigheten</a> </dt>
+                                            <dd>- livsvillkor & levnadsvanor, missbruk, sexualitet, smittskydd m m</dd>
+                                        <dt><a href="http://www.forskning.se/medicinhalsa.4.aae1aa51132473084980004330.html" target="_blank" rel="nofollow">Forskning.se - Medicin &amp; hälsa</a> </dt>
+                                            <dd>- nyheter, teman, faktalänkar m.m</dd>
+                                        <dt><a href="http://www.livsmedelsverket.se/matvanor-halsa--miljo/kostrad-och-matvanor/" target="_blank" rel="nofollow">Livsmedelsverket</a> </dt>
+                                            <dd>- om kostråd och matvanor</dd>
+                                        <dt><a href="http://www.vardguiden.se/Tema/Halsa/" target="_blank" rel="nofollow">Vårdguiden - tema hälsa</a> </dt>
+                                            <dd>- fakta från Stokholms läns landsting</dd>
+        
+                                        <H4 class="mt-3">Idrott</H4>
+                                        <dt><a href="http://www.dopingjouren.se/" target="_blank" rel="nofollow">Dopingjouren</a> </dt>
+                                            <dd>- fakta, vård, åtgärder, anhörig</dd>
+                                        <dt><a href="https://www.vanguard.edu/research/amoebaweb/sport-psychology" target="_blank" rel="nofollow">Exercise and Sport Psychology</a> </dt>
+                                        <dt><a href="http://idrottsforum.org/" target="_blank" rel="nofollow">Idrottsforum</a> </dt>
+                                            <dd>- vetenskapliga och populärvetenskapliga artiklar om idrottsforskning och idrottsvetenskap</dd>
+                                        <dt><a href="https://www.makupalat.fi/sv/k/11755/hae?category=114241&amp;sort=title&amp;order=asc&amp;f%5B0%5D=language%3Asv" rel="nofollow">Länkbiblioteket - idrott</a> </dt>
+                                            <dd>- stor länksamling från biblioteken i Finland. Mest material på svenska.</dd>
+                                        <dt><a href="http://www.rf.se/Antidoping/" target="_blank" rel="nofollow">Riksidrottsförbundet: antidopning</a> </dt>
+                                        <dt><a href="https://traningslara.se/" rel="nofollow">Träningslära </a> </dt>
+                                            <dd>- om träning, kost, hälsa </dd>
+        
+                                        <h4 class="mt-3">Missbruk (alkohol, droger, läkemedel, spel...)</h4>
+                                        <dt><a href="http://www.can.se/" target="_blank" rel="nofollow">CAN</a> </dt>
+                                            <dd>- Centralförbundet för alkohol- & narkotikaupplysning</dd>
+                                        <dt><a href="http://www.drogfritt.nu/" target="_blank" rel="nofollow">Droginformation&nbsp;</a> </dt>
+                                            <dd>- förebyggande information riktad till barn och unga, t ex fakta och intervjuer</dd>
+                                        <dt><a href="http://drugnews.nu/" target="_blank" rel="nofollow">DrugNews</a> </dt>
+                                            <dd>- nyhetsrapportering och fakta om olika former av missbruk</dd>
+                                        <dt><a href="http://www.drugsmart.com/" target="_blank" rel="nofollow">Drugsmart</a> </dt>
+                                            <dd>- fakta om alkohol och narkotika</dd>
+                                        <dt><a href="http://rfhl.se/riks/" target="_blank" rel="nofollow">RFHL</a> </dt>
+                                            <dd>- Riksförbundet för hjälp åt narkotika- och läkemedelsberoende</dd>
+                                        <dt><a href="http://www.socialvetenskap.se/bibliotek/droger-och-beroenden/" target="_blank" rel="nofollow">SocialVetenskap - Droger och beroenden</a> </dt>
+                                            <dd>- vetenskapligt material</dd>
+                                        <dt><a href="http://tobaksfakta.se/om/" target="_blank" rel="nofollow">Tobaksfakta</a> </dt>
+                                            <dd>- en oberoende sida med fakta, opinion och teman om tobaksrökning</dd>
+                                        <dt><a href="http://www.umo.se/" target="_blank" rel="nofollow">UMO.se</a> </dt>
+                                            <dd>- webbplats för 13-25-åringar, om alkohol, tobak och droger</dd>
+        
+                                        <h4 class="mt-3">Medicinhistoria</h4>
+                                        <dt><a href="http://www.sciencemuseum.org.uk/broughttolife.aspx" target="_blank" rel="nofollow">Brought to Life</a> </dt>
+                                            <dd>-  brittiska Science Museums webbplats om sjukdomar, behandlingsmetoder m.m.</dd>
+                                        <dt><a href="http://www.shenet.se/referens/medicinhistoria.html" target="_blank" rel="nofollow">Medicinhistoria</a> </dt>                            </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 collapse" data-parent="#collapsables" id="naturvetenskapCollapse">
+                            <div class="row">   
+                                <div class="col-12 col-md-6">
+                                    <dl>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd</dd>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>asd</dd>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd</dd>
+                                    </dl>
+                                </div>
+                                <div class="col-12 col-md-6" style="border-left: .175rem solid #5788fa; margin: 15px 0px;">
+                                    <dl>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd </dd>
+                                        <dt> <a href="asd" target="_blank">asd</a> </dt>
+                                            <dd>- asd </dd>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row justify-content-center"> <!-- Fjärde 3 titlarna-->
+                        <div class="col-4" id="linkBtn" style="background-image: url(Bilder/Samhällskunskap.png);">
+                            <a data-toggle="collapse" aria-expanded="false" href="#samhällskunskapCollapse">
+                                <h3 class="text-center" id="linkBtnText">Samhälls<span id="linkBtnSpan">kunskap</span></h3>
+                            </a>
+                        </div>
+                        <div class="col-4" id="linkBtn" style="background-image: url(Bilder/Statistik.jpg);">
+                            <a data-toggle="collapse" aria-expanded="false" href="#statistikCollapse">
+                                <h3 class="text-center småText">Statistik</h3>
+                            </a>
+                        </div>
+                        <div class="col-4" id="linkBtn" style="background-image: url(Bilder/Språk.jpg);">
+                            <a data-toggle="collapse" aria-expanded="false" href="#språkCollapse">
+                                <h3 class="text-center småText">Språk</h3>
+                            </a>
+                        </div>
+                        
+                    </div>
+                    <div class="row"> <!-- Fjärde 3 länksamlingarna-->
+                        <div class="col-12 collapse" data-parent="#collapsables" id="samhällskunskapCollapse">
+                            <div class="row">   
+                                <div class="col-12 col-md-6">
+                                    <dl>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd</dd>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>asd</dd>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd</dd>
+                                    </dl>
+                                </div>
+                                <div class="col-12 col-md-6" style="border-left: .175rem solid #5788fa; margin: 15px 0px;">
+                                    <dl>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd </dd>
+                                        <dt> <a href="asd" target="_blank">asd</a> </dt>
+                                            <dd>- asd </dd>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 collapse" data-parent="#collapsables" id="statistikCollapse">
+                            <div class="row">   
+                                <div class="col-12 col-md-6">
+                                    <dl>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd</dd>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>asd</dd>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd</dd>
+                                    </dl>
+                                </div>
+                                <div class="col-12 col-md-6" style="border-left: .175rem solid #5788fa; margin: 15px 0px;">
+                                    <dl>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd </dd>
+                                        <dt> <a href="asd" target="_blank">asd</a> </dt>
+                                            <dd>- asd </dd>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 collapse" data-parent="#collapsables" id="språkCollapse">
+                            <div class="row">   
+                                <div class="col-12 col-md-6">
+                                    <dl>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd</dd>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>asd</dd>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd</dd>
+                                    </dl>
+                                </div>
+                                <div class="col-12 col-md-6" style="border-left: .175rem solid #5788fa; margin: 15px 0px;">
+                                    <dl>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd </dd>
+                                        <dt> <a href="asd" target="_blank">asd</a> </dt>
+                                            <dd>- asd </dd>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row justify-content-center"> <!-- Femte 3 titlarna-->
+                        <div class="col-4 BLeft" id="linkBtn" style="background-image: url(Bilder/Psykologi.jpg);">
+                            <a data-toggle="collapse" aria-expanded="false" href="#psykologiFilosofiCollapse">
+                                <h3 class="text-center">Psykologi & Filosofi</h3>
+                            </a>
+                        </div>
+                        <div class="col-4" id="linkBtn" style="background-image: url(Bilder/Religion.png);">
+                            <a data-toggle="collapse" aria-expanded="false" href="#religionEtikCollapse">
+                                <h3 class="text-center">Religion & Etik</h3>
+                            </a>
+                        </div>
+                        <div class="col-4 BRight" id="linkBtn" style="background-image: url(Bilder/Stipdendier.jpg);">
+                            <a data-toggle="collapse" aria-expanded="false" href="#stipendierFonderCollapse">
+                                <h3 class="text-center">Stipendier & Fonder</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row"> <!-- Femte 3 länksamlingarna-->
+                        <div class="col-12 collapse" data-parent="#collapsables" id="psykologiFilosofiCollapse">
+                            <div class="row">   
+                                <div class="col-12 col-md-6">
+                                    <dl>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd</dd>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>asd</dd>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd</dd>
+                                    </dl>
+                                </div>
+                                <div class="col-12 col-md-6" style="border-left: .175rem solid #5788fa; margin: 15px 0px;">
+                                    <dl>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd </dd>
+                                        <dt> <a href="asd" target="_blank">asd</a> </dt>
+                                            <dd>- asd </dd>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 collapse" data-parent="#collapsables" id="religionEtikCollapse">
+                            <div class="row">   
+                                <div class="col-12 col-md-6">
+                                    <dl>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd</dd>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>asd</dd>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd</dd>
+                                    </dl>
+                                </div>
+                                <div class="col-12 col-md-6" style="border-left: .175rem solid #5788fa; margin: 15px 0px;">
+                                    <dl>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd </dd>
+                                        <dt> <a href="asd" target="_blank">asd</a> </dt>
+                                            <dd>- asd </dd>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 collapse" data-parent="#collapsables" id="stipendierFonderCollapse">
+                            <div class="row">   
+                                <div class="col-12 col-md-6">
+                                    <dl>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd</dd>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>asd</dd>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd</dd>
+                                    </dl>
+                                </div>
+                                <div class="col-12 col-md-6" style="border-left: .175rem solid #5788fa; margin: 15px 0px;">
+                                    <dl>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd </dd>
+                                        <dt> <a href="asd" target="_blank">asd</a> </dt>
+                                            <dd>- asd </dd>
+                                        <dt> <a href="asd" target="_blank" rel="nofollow">asd</a> </dt>
+                                            <dd>- asd</dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
 
 
         <div class="row mt-5">

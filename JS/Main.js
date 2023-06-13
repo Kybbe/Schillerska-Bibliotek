@@ -137,12 +137,6 @@ document.getElementById('instaPic').onmouseleave = function(){
     document.getElementById('instaTxt').style.display = 'none';
 }
 
-$(function(){
-    $("#usefulLinksImport").load("../usefulLinks.html"); 
-    $("#mapImport").load("../map.html");
-    $("#searchResultsImport").load("../mapSearchResults.html");
-});
-
 $('.navbar-nav>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
 });
